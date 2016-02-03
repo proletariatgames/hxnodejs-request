@@ -1,6 +1,6 @@
-# Haxe/hxnodejs externs for the [request](https://www.npmjs.com/package/request)
+# Haxe/hxnodejs externs for the [request](https://www.npmjs.com/package/request) npm library
 
-For `request` version **2.69.0**
+Tested using `request` version **2.69.0**
 
 Example:
 ```haxe
