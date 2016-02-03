@@ -1,0 +1,14 @@
+{
+  "name": "hxnodejs-request",
+  "url": "https://github.com/proletariatgames/hxnodejs-request",
+  "license": "MIT",
+  "classPath": "src",
+  "tags": ["nodejs", "http"],
+  "description": "Externs for the request NPM module",
+  "releasenote": "Initial release",
+  "version": "2.69.0",
+  "contributors": ["Proletariat", "lpetre", "danogles", "waneck"],
+  "dependencies": {
+    "hxnodejs": ""
+  }
+}
