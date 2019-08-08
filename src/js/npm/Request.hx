@@ -64,10 +64,10 @@ extern class Request extends Readable<Request> {
 
 @:enum abstract RequestEvent<T:haxe.Constraints.Function>(Event<T>) to Event<T> {
   var Response : RequestEvent<IncomingMessage->Void> = "response";
-  var Error : RequestEvent<js.Error->Void> = "error";
+  var Error : RequestEvent<js.lib.Error->Void> = "error";
 }
 
-typedef RequestCallback = js.Error->IncomingMessage->EitherType<String,js.node.buffer.Buffer>->Void;
+typedef RequestCallback = js.lib.Error->IncomingMessage->EitherType<String,js.node.buffer.Buffer>->Void;
 
 typedef RequestOptions = {
   /**
