@@ -8,6 +8,11 @@ import js.node.http.Method;
 import js.node.stream.Readable;
 import js.npm.request.FormData;
 import js.npm.request.OAuthOptions;
+#if haxe4
+import js.lib.Error;
+#else
+import js.Error;
+#end
 
 @:jsRequire("request")
 extern class Request extends Readable<Request> {
@@ -64,10 +69,10 @@ extern class Request extends Readable<Request> {
 
 @:enum abstract RequestEvent<T:haxe.Constraints.Function>(Event<T>) to Event<T> {
   var Response : RequestEvent<IncomingMessage->Void> = "response";
-  var Error : RequestEvent<js.lib.Error->Void> = "error";
+  var Error : RequestEvent<Error->Void> = "error";
 }
 
-typedef RequestCallback = js.lib.Error->IncomingMessage->EitherType<String,js.node.buffer.Buffer>->Void;
+typedef RequestCallback = Error->IncomingMessage->EitherType<String,js.node.buffer.Buffer>->Void;
 
 typedef RequestOptions = {
   /**
