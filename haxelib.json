@@ -5,8 +5,8 @@
   "classPath": "src",
   "tags": ["nodejs", "http"],
   "description": "Externs for the request NPM module",
-  "releasenote": "Update to Haxe 4",
-  "version": "2.69.3",
+  "releasenote": "Add agent options",
+  "version": "2.69.4",
   "contributors": ["Proletariat", "ProletariatDev1"],
   "dependencies": {
     "hxnodejs": ""

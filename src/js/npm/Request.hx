@@ -162,6 +162,8 @@ typedef RequestOptions = {
    **/
   @:optional var agent:String;
 
+  @:optional var agentOptions:Dynamic;
+
   /**
     set to true to use the forever-agent Note: Defaults to http(s).Agent({keepAlive:true}) in node 0.12+
    **/
